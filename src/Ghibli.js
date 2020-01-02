@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Suggestions from './Suggestions'
 
 
 
@@ -21,7 +22,7 @@ class Ghibli extends Component {
             })
             .catch(function (error){
                 console.log(error);
-            })
+            });
     }
     handleInputChange() {
         this.setState ({
@@ -31,13 +32,14 @@ class Ghibli extends Component {
                 if (this.state.query.length % 2 === 0) {
                     this.getInfo()
                 }
+            } else if (!this.state.query){
             }
         });
-    };
+    }
     render (){
         return (
             <div>
-                <h1>Search the  Ghibli</h1>
+                <h1>Search for your favorite Studio Ghibli film!!!</h1>
                 <div>
                     <form>
                         <input
@@ -45,7 +47,7 @@ class Ghibli extends Component {
                             ref = {input => this.search = input}
                             onChange = {this.handleInputChange}
                             />
-                            <p>{this.state.query}</p>
+                            <Suggestions results = {this.state.results} />
                     </form>
                 </div>
             </div>

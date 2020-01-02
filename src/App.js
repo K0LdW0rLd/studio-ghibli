@@ -5,6 +5,8 @@ import About from './About';
 import Studio from './Studio';
 import Ghibli from './Ghibli';
 import logo from './logo.png';
+import StudioGhibli from './StudioGhibli';
+import FilmDetail from './FilmDetail'
 
 class App extends Component {
   render() {
@@ -19,18 +21,23 @@ class App extends Component {
             <div className="collpase navbar-collapse">
               <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
-                  <Link to="/" className="nav-link">About</Link>
+                  <Link to="/about" className="nav-link">About</Link>
                 </li>
                 <li className="navbar-item">
-                  <Link to="/ghibli" className="nav-link">Ghibli</Link>
+                  <Link to="/ghibli" className="nav-link">Search</Link>
+                </li>
+                <li className="navbar-item">
+                  <Link to="/films" className="nav-link">Films</Link>
                 </li>
               </ul>
             </div>
           </nav>
-          <h2>Studio Ghibli App</h2>
-          <Route path = '/' exact component = {About} />
-          <Route path = '/studio/:id' component = {Studio} />
+          <h1>Studio Ghibli App</h1>
+          <Route path = '/' exact component = {Studio} />
+          <Route path = '/about' component = {About} />
           <Route path="/ghibli" component={Ghibli} />
+          <Route path='/films' exact component={StudioGhibli} />
+          <Route path='/films/:id' component = {FilmDetail}/>
         </div>
       </Router>
     );
