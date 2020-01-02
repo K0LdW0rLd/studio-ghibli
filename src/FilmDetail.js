@@ -1,5 +1,6 @@
 import React, {Component, useState, useEffect} from 'react';
 import axios from 'axios';
+import logo from './logo.png';
 
 class FilmDetail extends Component {
     constructor () {
@@ -30,12 +31,27 @@ class FilmDetail extends Component {
 return (
     /*Trying to get the title to show*/
     <div>
-        <h3>{this.props.title}</h3> 
-        <div>
-            <p>{this.props.director}</p>
-            <p>{this.props.producer}</p>
-            <p>{this.props.rt_score}</p>
-            <p>{this.props.description}</p>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    <div class="card mb-4 bg-dark text-light" >
+                        <img src={logo} width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
+                        <div class="card-body">
+                        <p class="card-text"><strong>{this.props.title}</strong></p>
+                        <p class="card-text"><strong>Director: </strong>{this.props.director}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">{this.props.rt_score}</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     )
