@@ -41,10 +41,6 @@ return (
                         <p class="card-text"><strong>{this.props.title}</strong></p>
                         <p class="card-text"><strong>Director: </strong>{this.props.director}</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
                             <small class="text-muted">{this.props.rt_score}</small>
                         </div>
                         </div>
