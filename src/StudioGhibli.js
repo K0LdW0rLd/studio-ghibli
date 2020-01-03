@@ -32,23 +32,14 @@ class StudioGhibli extends Component {
             director = {film.director}
             producer = {film.producer}
             description = {film.description}
+            release_date = {film.release_date}
             rt_score = {film.rt_score}
             />})
 
         return (
             <div>
                 <h2>All the Studio Ghibli Films</h2>
-                {/* Meant to link to the film id and pull info */}
-                {/* <div>
-                    {data.map(i => (
-                        <p key={i.id}>
-                            <Link to={`/films/${i._id}`}>{i.title}</Link>
-                        </p>
-                    ))}
-                </div> */}
-                <div>
-                    {studio}
-                </div>
+                <div>{studio}</div>
             </div>
         )
     }
