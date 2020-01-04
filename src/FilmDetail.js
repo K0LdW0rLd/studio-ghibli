@@ -1,5 +1,4 @@
-import React, {Component, useState, useEffect} from 'react';
-import logo from './logo.png';
+import React, {Component} from 'react';
 import Modal from './Modal';
 
 class FilmDetail extends Component {

@@ -10,10 +10,10 @@ class Modal extends Component {
             <h1>{this.props.title}</h1>
             <img className = 'imgbor' src={logo} alt='Studio Ghibli Logo'></img>
             <p><strong>Director:</strong> {this.props.director}</p>
-            <p><span>Producer:</span> {this.props.producer}</p>
-            <p><span>Release Date:</span> {this.props.release_date}</p>
-            <p><span>Rotten Tomato Score:</span> {this.props.rt_score}</p>
-            <p><span>Description:</span> {this.props.description}</p>
+            <p><strong>Producer:</strong> {this.props.producer}</p>
+            <p><strong>Release Date:</strong> {this.props.release_date}</p>
+            <p><strong>Rotten Tomato Score:</strong> {this.props.rt_score}</p>
+            <p><strong>Description:</strong> {this.props.description}</p>
           </a>
         </div>
       )
