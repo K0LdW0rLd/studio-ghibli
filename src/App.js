@@ -6,7 +6,8 @@ import Studio from './Studio';
 import Ghibli from './Ghibli';
 import logo from './logo.png';
 import StudioGhibli from './StudioGhibli';
-import FilmDetail from './FilmDetail'
+import FilmDetail from './FilmDetail';
+import Director from './Director';
 
 class App extends Component {
   render() {
@@ -24,8 +25,11 @@ class App extends Component {
                   <Link to="/about" className="nav-link">About</Link>
                 </li>
                 <li className="navbar-item">
-                  <Link to="/ghibli" className="nav-link">Search</Link>
+                  <Link to="/director" className="nav-link">Directors</Link>
                 </li>
+                {/* <li className="navbar-item">
+                  <Link to="/ghibli" className="nav-link">Search</Link>
+                </li> */}
                 <li className="navbar-item">
                   <Link to="/films" className="nav-link">Films</Link>
                 </li>
@@ -38,6 +42,7 @@ class App extends Component {
           <Route path="/ghibli" component={Ghibli} />
           <Route path='/films' exact component={StudioGhibli} />
           <Route path='/films/:id' component = {FilmDetail}/>
+          <Route path='/director' component = {Director}/>
         </div>
       </Router>
     );
