@@ -12,7 +12,7 @@ class StudioGhibli extends Component {
 
     componentDidMount () {
         console.log('I am doing something')
-        axios.get('http://localhost:8080/studio/')
+        axios.get('https://studio-ghibli-970.herokuapp.com/studio')
             .then(res => {
                 console.log(res)
                 this.setState({ GData: res.data });
