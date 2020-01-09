@@ -17,7 +17,7 @@ class Director extends Component {
                     <div class="row">
                         <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src ={hayaoMiyazaki} width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
+                            <img src ={hayaoMiyazaki} width="100%" height="350" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
                             <div class="card-body">
                             <p class="card-text">Hayao Miyazaki</p>
                             <p>Directed:</p>
@@ -39,7 +39,7 @@ class Director extends Component {
                         </div>
                         <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src ={isaoTakahata} width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
+                            <img src ={isaoTakahata} width="100%" height="350" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
                             <div class="card-body">
                             <p class="card-text">Isao Takahata</p>
                             <p>Directed:</p>
@@ -57,7 +57,7 @@ class Director extends Component {
                         </div>
                         <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src ={yoshifumiKondou} width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
+                            <img src ={yoshifumiKondou} width="100%" height="350" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
                             <div class="card-body">
                             <p class="card-text">Yoshifumi Kondou</p>
                             <p>Directed:</p>
@@ -72,7 +72,7 @@ class Director extends Component {
 
                         <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src ={goroMiyazaki} width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
+                            <img src ={goroMiyazaki} width="100%" height="350" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
                             <div class="card-body">
                             <p class="card-text">Goro Miyazaki</p>
                             <p>Directed:</p>
@@ -87,7 +87,7 @@ class Director extends Component {
                         </div>
                         <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src ={hiromasaYo} width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
+                            <img src ={hiromasaYo} width="100%" height="350" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
                             <div class="card-body">
                             <p class="card-text">Hiromasa Yonebayashi</p>
                             <p>Directed:</p>
@@ -102,7 +102,7 @@ class Director extends Component {
                         </div>
                         <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img src ={hiroMo} width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
+                            <img src ={hiroMo} width="100%" height="350" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" />
                             <div class="card-body">
                             <p class="card-text">Hiroyuki Morita</p>
                             <p>Directed:</p>
